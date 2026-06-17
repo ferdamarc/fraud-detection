@@ -1,0 +1,28 @@
+name: fraud_detection
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  # Manipulação e análise de dados
+  - pandas=2.2
+  - numpy=1.26
+  # Visualização
+  - matplotlib=3.8
+  - seaborn=0.13
+  # Machine Learning
+  - scikit-learn=1.4
+  - xgboost=2.0
+  - lightgbm=4.3
+  # Interpretabilidade
+  - shap=0.45
+  # Classes desbalanceadas
+  - imbalanced-learn=0.12
+  # Notebooks
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  # Qualidade de código
+  - pip:
+    - nbformat>=5.9

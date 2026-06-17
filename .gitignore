@@ -1,0 +1,67 @@
+# Configuração local de caminhos (não compartilhar no repositório)
+data_dir.txt
+
+# ============================================================
+# Dados brutos — nunca commitar arquivos pesados no Git
+# Os dados ficam em ~/data/ (fora do repositório)
+# ============================================================
+data/
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+
+# ============================================================
+# Ambientes virtuais e gerenciadores de pacotes
+# ============================================================
+.venv/
+venv/
+env/
+.env/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ============================================================
+# Jupyter — checkpoints automáticos não precisam de versionamento
+# ============================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================================
+# Modelos treinados — podem ser grandes; documentar no README
+# os resultados é suficiente para portfólio
+# ============================================================
+models/*.pkl
+models/*.joblib
+models/*.json
+models/*.ubj
+
+# ============================================================
+# Relatórios gerados automaticamente
+# ============================================================
+reports/figures/*.png
+reports/figures/*.jpg
+reports/figures/*.pdf
+reports/html/
+
+# ============================================================
+# IDEs e editores
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================================
+# Logs e arquivos temporários
+# ============================================================
+*.log
+*.tmp
+*.temp
+.cache/
